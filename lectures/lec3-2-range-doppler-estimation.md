@@ -29,7 +29,7 @@ Here, `R` is range, `c` is speed of light, `Ts` is the chirp time, `Fb` is the b
 
 #### Exercise: range calculation
 
-Using the Python  code ([Range_estimation](lectures/src/range_est.py)), I calculated the ranges [0.0 m, 12.1 m, 143.0 m, 264.0 m] of four targets with measured beat frequencies [0 MHz, 1.1 MHz, 13 MHz, 24 MHz] respectively.
+Using the Python  code ([Range_estimation](src/range_est.py)), I calculated the ranges [0.0 m, 12.1 m, 143.0 m, 264.0 m] of four targets with measured beat frequencies [0 MHz, 1.1 MHz, 13 MHz, 24 MHz] respectively.
 
 ```python
 >> range_cal
@@ -56,7 +56,7 @@ Here, `d(x)` is the path changed between target and radar, `lambda` is wavelengt
 
 #### Exercise: velocity calculation
 
-Using the python code ([Velocity_Calculation](lectures/src/velocity_cal.py)), I calculated the relative velocities [5.84 m/s, -8.76 m/s, 21.42 m/s, -5.84 m/s] of four target with doppler frequency shifts [3 KHz, -4.5 KHz, 11 KHz, -3 KHz] respectively.
+Using the python code ([Velocity_Calculation](src/velocity_cal.py)), I calculated the relative velocities [5.84 m/s, -8.76 m/s, 21.42 m/s, -5.84 m/s] of four target with doppler frequency shifts [3 KHz, -4.5 KHz, 11 KHz, -3 KHz] respectively.
 
 ```Python
 >> velocity_cal
@@ -73,7 +73,7 @@ FFT converts the signal from *time domain* to *frequency domain*, i.e. multiple 
 
 #### Exercise: FFT
 
-Using the Python code ([FFT](lectures/src/fft.py)), I constructed a signal with two frequency components plus random noise. Then FFT was used to extract the frequency components of the signal buried in noise, which are about 45Hz and 80Hz.
+Using the Python code ([FFT](src/fft.py)), I constructed a signal with two frequency components plus random noise. Then FFT was used to extract the frequency components of the signal buried in noise, which are about 45Hz and 80Hz.
 
 <img src="media/fft-exercise.png" width="800" height="300" />
 
