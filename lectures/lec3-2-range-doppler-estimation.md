@@ -29,9 +29,9 @@ Here, `R` is range, `c` is speed of light, `Ts` is the chirp time, `Fb` is the b
 
 #### Exercise: range calculation
 
-Using the MATLAB code ([36f29e1](https://github.com/fanweng/Udacity-Sensor-Fusion-Nanodegree/commit/36f29e1b2bba07c4db245c82ca68925658e30bec)), I calculated the ranges [0.0 m, 12.1 m, 143.0 m, 264.0 m] of four targets with measured beat frequencies [0 MHz, 1.1 MHz, 13 MHz, 24 MHz] respectively.
+Using the Python  code ([Range_estimation](Udacity-Sensor-Fusion-Nanodegree/lectures/src/range_est.py)), I calculated the ranges [0.0 m, 12.1 m, 143.0 m, 264.0 m] of four targets with measured beat frequencies [0 MHz, 1.1 MHz, 13 MHz, 24 MHz] respectively.
 
-```matlab
+```python
 >> range_cal
     0   12.1000  143.0000  264.0000
 ```
@@ -56,9 +56,9 @@ Here, `d(x)` is the path changed between target and radar, `lambda` is wavelengt
 
 #### Exercise: velocity calculation
 
-Using the MATLAB code ([464b765](https://github.com/fanweng/Udacity-Sensor-Fusion-Nanodegree/commit/464b7652103bd285ccac7f8171e8d60975884075)), I calculated the relative velocities [5.84 m/s, -8.76 m/s, 21.42 m/s, -5.84 m/s] of four target with doppler frequency shifts [3 KHz, -4.5 KHz, 11 KHz, -3 KHz] respectively.
+Using the python code ([Velocity_Calculation](Udacity-Sensor-Fusion-Nanodegree/lectures/src/velocity_cal.py)), I calculated the relative velocities [5.84 m/s, -8.76 m/s, 21.42 m/s, -5.84 m/s] of four target with doppler frequency shifts [3 KHz, -4.5 KHz, 11 KHz, -3 KHz] respectively.
 
-```matlab
+```Python
 >> velocity_cal
     5.8442   -8.7662   21.4286   -5.8442
 ```
@@ -73,7 +73,7 @@ FFT converts the signal from *time domain* to *frequency domain*, i.e. multiple 
 
 #### Exercise: FFT
 
-Using the MATLAB code ([4fce1f4](https://github.com/fanweng/Udacity-Sensor-Fusion-Nanodegree/commit/4fce1f45d0f4523c8f8d659bd49d77079a11c485)), I constructed a signal with two frequency components plus random noise. Then FFT was used to extract the frequency components of the signal buried in noise, which are about 45Hz and 80Hz.
+Using the Python code ([FFT](Udacity-Sensor-Fusion-Nanodegree/lectures/src/fft.py)), I constructed a signal with two frequency components plus random noise. Then FFT was used to extract the frequency components of the signal buried in noise, which are about 45Hz and 80Hz.
 
 <img src="media/fft-exercise.png" width="800" height="300" />
 
